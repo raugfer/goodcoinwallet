@@ -7,7 +7,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     defaultConfig {
-        applicationId "com.cashuwallet.android"
+        applicationId "com.goodcoinwallet.android"
         minSdkVersion 21
         targetSdkVersion 27
         versionCode 8

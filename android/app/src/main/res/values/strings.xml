@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name" translatable="false">Cashu</string>
+    <string name="app_name" translatable="false">Good Coin</string>
     <string name="app_tagline">Mobile crypto wallet</string>
     <string name="title_activity_main">Main panel</string>
     <string name="title_activity_settings" translatable="false">@string/action_settings</string>
@@ -46,8 +46,7 @@
     <string name="read_with_attention">Read with attention</string>
     <string name="warning_untested_software">
         This software is under development and not fully tested. It is provided AS IS and can potentially produce the loss of funds. Do not to transact with significant amounts.
-        \n\nCashu is BIP39/BIP44 compatible. Read our Privacy Policy at https://cashu.cc/privacy/ for a summary on how security works.
-        \n\nPlease report issues to bugs@cashu.cc
+        \n\nThis wallet was created based on the Cashu Wallet https://cashu.cc/. Read their Privacy Policy at https://cashu.cc/privacy/.
     </string>
 
     <string name="mnemonic_label">Inform the wallet mnemonic phrase</string>

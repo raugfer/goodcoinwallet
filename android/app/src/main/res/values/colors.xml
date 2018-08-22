@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#0a4142</color>
-    <color name="colorPrimaryDark">#053435</color>
-    <color name="colorAccent">#ee572f</color>
+    <color name="colorPrimary">#ef7922</color>
+    <color name="colorPrimaryDark">#c0611b</color>
+    <color name="colorAccent">#17abaa</color>
     <color name="black_overlay">#66000000</color>
 
     <color name="colorBlack">#000000</color>
 
-    <color name="splash_background">#0099cc</color>
+    <color name="splash_background">#ffffff</color>
     <color name="welcome_background">#ffffff</color>
 
     <color name="colorTag">#80ee572f</color>
@@ -17,103 +17,11 @@
     <color name="status_confirmed">#8fcf4c</color>
     <color name="status_error">#aa0000</color>
 
-    <color name="bitcoin">#f7931a</color>
-    <color name="bitcoin_dark">#c67615</color>
-    <color name="bitcoin_lite">#845d2c</color>
-
-    <color name="bitcoincash">#009900</color>
-    <color name="bitcoincash_dark">#007b00</color>
-    <color name="bitcoincash_lite">#005700</color>
-
-    <color name="bitcoingold">#00206b</color>
-    <color name="bitcoingold_dark">#001a56</color>
-    <color name="bitcoingold_lite">#eba809</color>
-
-    <color name="dash">#2573c2</color>
-    <color name="dash_dark">#1e5c9c</color>
-    <color name="dash_lite">#224b76</color>
-
-    <color name="dogecoin">#c2a633</color>
-    <color name="dogecoin_dark">#9c8529</color>
-    <color name="dogecoin_lite">#65571c</color>
-
     <color name="ethereum">#8c8c8c</color>
     <color name="ethereum_dark">#707070</color>
     <color name="ethereum_lite">#707070</color>
 
-    <color name="ethereumclassic">#3cba3c</color>
-    <color name="ethereumclassic_dark">#309530</color>
-    <color name="ethereumclassic_lite">#309530</color>
-
-    <color name="lisk">#04183d</color>
-    <color name="lisk_dark">#031331</color>
-    <color name="lisk_lite">#ff6236</color>
-
-    <color name="litecoin">#bebebe</color>
-    <color name="litecoin_dark">#999999</color>
-    <color name="litecoin_lite">#999999</color>
-
-    <color name="nano">#0f1121</color>
-    <color name="nano_dark">#0c0e1b</color>
-    <color name="nano_lite">#3b74b5</color>
-
-    <color name="neo">#00a62c</color>
-    <color name="neo_dark">#008523</color>
-    <color name="neo_lite">#beeb00</color>
-
-    <color name="neogas">#00a62c</color>
-    <color name="neogas_dark">#008523</color>
-    <color name="neogas_lite">#beeb00</color>
-
-    <color name="qtum">#2e9ad0</color>
-    <color name="qtum_dark">#257ca7</color>
-    <color name="qtum_lite">#257ca7</color>
-
-    <color name="ripple">#0081c2</color>
-    <color name="ripple_dark">#00689c</color>
-    <color name="ripple_lite">#00689c</color>
-
-    <color name="stellar">#067fa0</color>
-    <color name="stellar_dark">#056680</color>
-    <color name="stellar_lite">#cef0fa</color>
-
-    <color name="zcash">#cd8421</color>
-    <color name="zcash_dark">#a56a1b</color>
-    <color name="zcash_lite">#ffd25c</color>
-
-    <color name="_0x">#000000</color>
-    <color name="_0x_dark">#000000</color>
-    <color name="_0x_lite">#b7b7b7</color>
-
-    <color name="aeternity">#f7296e</color>
-    <color name="aeternity_dark">#c62158</color>
-    <color name="aeternity_lite">#636c72</color>
-
-    <color name="augur">#412467</color>
-    <color name="augur_dark">#341d53</color>
-    <color name="augur_lite">#f7931a</color>
-
-    <color name="basicattentiontoken">#ff5000</color>
-    <color name="basicattentiontoken_dark">#cd4000</color>
-    <color name="basicattentiontoken_lite">#662d91</color>
-
-    <color name="binancecoin">#f3ba2f</color>
-    <color name="binancecoin_dark">#c39526</color>
-    <color name="binancecoin_lite">#666666</color>
-
-    <color name="eos">#443f54</color>
-    <color name="eos_dark">#373343</color>
-    <color name="eos_lite">#bcd1cc</color>
-
-    <color name="golem">#002d64</color>
-    <color name="golem_dark">#002450</color>
-    <color name="golem_lite">#b0ec00</color>
-
-    <color name="omisego">#1a53f0</color>
-    <color name="omisego_dark">#1543c1</color>
-    <color name="omisego_lite">#4fcdfb</color>
-
-    <color name="status">#505db7</color>
-    <color name="status_dark">#404b93</color>
-    <color name="status_lite">#7dc4b0</color>
+    <color name="goodcoin">#ef7922</color>
+    <color name="goodcoin_dark">#c0611b</color>
+    <color name="goodcoin_lite">#17abaa</color>
 </resources>
