@@ -21,7 +21,7 @@
     <color name="ethereum_dark">#707070</color>
     <color name="ethereum_lite">#707070</color>
 
-    <color name="goodcoin">#ef7922</color>
-    <color name="goodcoin_dark">#c0611b</color>
-    <color name="goodcoin_lite">#17abaa</color>
+    <color name="gudcoin">#ef7922</color>
+    <color name="gudcoin_dark">#c0611b</color>
+    <color name="gudcoin_lite">#17abaa</color>
 </resources>

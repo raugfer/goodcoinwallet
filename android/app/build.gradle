@@ -7,7 +7,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     defaultConfig {
-        applicationId "com.goodcoinwallet.android"
+        applicationId "com.gudcoinwallet.android"
         minSdkVersion 21
         targetSdkVersion 27
         versionCode 8

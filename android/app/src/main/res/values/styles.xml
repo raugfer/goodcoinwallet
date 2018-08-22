@@ -33,10 +33,10 @@
         <item name="android:statusBarColor">@color/ethereum_dark</item>
         <item name="colorAccent">@color/ethereum_lite</item>
     </style>
-    <style name="Good.Coin" parent="AppTheme.NoActionBar">
-        <item name="colorPrimary">@color/goodcoin</item>
-        <item name="colorPrimaryDark">@color/goodcoin_dark</item>
-        <item name="android:statusBarColor">@color/goodcoin_dark</item>
-        <item name="colorAccent">@color/goodcoin_lite</item>
+    <style name="Gud.Coin" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/gudcoin</item>
+        <item name="colorPrimaryDark">@color/gudcoin_dark</item>
+        <item name="android:statusBarColor">@color/gudcoin_dark</item>
+        <item name="colorAccent">@color/gudcoin_lite</item>
     </style>
 </resources>
