@@ -1,1 +1,1 @@
-# cashuwallet
+# goodcoinwallet
