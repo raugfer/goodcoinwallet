@@ -1,4 +1,4 @@
-package com.cashuwallet.android;
+package com.gudcoinwallet.android;
 
 import android.os.AsyncTask;
 import android.os.NetworkOnMainThreadException;
