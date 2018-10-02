@@ -16,12 +16,12 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:scaleType="fitStart"
-        android:layout_height="48dp"
+        android:layout_height="68dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:textColor="@color/colorBlack"
+        android:textColor="@color/colorWhite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
@@ -29,7 +29,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
-        android:textColor="@color/colorBlack"
+        android:textColor="@color/colorWhite"
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
