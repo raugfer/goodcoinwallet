@@ -27,11 +27,11 @@
     </style>
     <style name="Welcome" parent="AppTheme" />
 
-    <style name="Ethereum" parent="AppTheme.NoActionBar">
-        <item name="colorPrimary">@color/ethereum</item>
-        <item name="colorPrimaryDark">@color/ethereum_dark</item>
-        <item name="android:statusBarColor">@color/ethereum_dark</item>
-        <item name="colorAccent">@color/ethereum_lite</item>
+    <style name="Waves" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/waves</item>
+        <item name="colorPrimaryDark">@color/waves_dark</item>
+        <item name="android:statusBarColor">@color/waves_dark</item>
+        <item name="colorAccent">@color/waves_lite</item>
     </style>
     <style name="Gud.Coin" parent="AppTheme.NoActionBar">
         <item name="colorPrimary">@color/gudcoin</item>

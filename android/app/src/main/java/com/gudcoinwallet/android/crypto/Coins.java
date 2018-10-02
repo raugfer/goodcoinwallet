@@ -8,13 +8,13 @@ import java.util.Map;
 
 public final class Coins {
 
-    private static final Coin ethereum = new Ethereum();
+    private static final Coin waves = new Waves();
     private static final Coin gudcoin = new GudCoin();
 
     private static final Map<String, Coin> registry = new HashMap<>();
 
     static {
-        registry.put(ethereum.getCode(), ethereum);
+        registry.put(waves.getCode(), waves);
         registry.put(gudcoin.getCode(), gudcoin);
     }
 
@@ -59,67 +59,67 @@ public final class Coins {
         }
     }
 
-    private static class Ethereum extends AbstractCoin {
+    private static class Waves extends AbstractCoin {
         @Override
         public String getName() {
-            return "Ethereum";
+            return "Waves";
         }
 
         @Override
         public String getLabel() {
-            return "ethereum";
+            return "waves";
         }
 
         @Override
         public String getCode() {
-            return "ETH";
+            return "WAVES";
         }
 
         @Override
         public String getSymbol() {
-            return "Ξ";
+            return null;
         }
 
         @Override
         public Service getService(boolean testnet) {
             if (testnet) {
-                return new EtherscanAPI("https://api-ropsten.etherscan.io/api");
+                return new WavesnodesAPI("https://pool.testnet.wavesnodes.com/", true, 100000);
             } else {
-                return new Service.Multi(new Service[]{
-                        new EtherscanAPI("https://api.etherscan.io/api"),
-                        new BlockcypherAPI("https://api.blockcypher.com/v1/eth/main"),
-                });
+                return new WavesnodesAPI("https://nodes.wavesnodes.com/", false, 100000);
             }
         }
 
         @Override
         public String getTransactionUrl(String hash, boolean testnet) {
             if (testnet) {
-                return "https://ropsten.etherscan.io/tx/" + hash;
+                return "https://testnet.wavesexplorer.com/tx/" + hash;
             } else {
-                return "https://etherscan.io/tx/" + hash;
+                return "https://wavesexplorer.com/tx/" + hash;
             }
         }
     }
 
-    public static abstract class ERC20Token extends Ethereum {
+    public static abstract class WavesToken extends Waves {
         @Override
         public Coin getFeeCoin() {
-            return findCoin("ETH");
+            return findCoin("WAVES");
         }
+
+        public long getFee() { return 100000; }
 
         @Override
         public Service getService(boolean testnet) {
-            String contractAddress = coins.attr("contract.address", getLabel(), testnet);
+            String assetId = coins.attr("asset.id", getLabel(), testnet);
+            long fee = getFee();
             if (testnet) {
-                return new EtherscanAPI("https://api-ropsten.etherscan.io/api", contractAddress);
+                return new WavesnodesAPI("https://pool.testnet.wavesnodes.com/", assetId, true, fee);
             } else {
-                return new EtherscanAPI("https://api.etherscan.io/api", contractAddress);
+                return new WavesnodesAPI("https://nodes.wavesnodes.com/", assetId, false, fee);
             }
         }
     }
 
-    private static class GudCoin extends ERC20Token {
+    private static class GudCoin extends WavesToken {
         @Override
         public String getName() {
             return "Gud Coin";
@@ -132,12 +132,22 @@ public final class Coins {
 
         @Override
         public String getCode() {
-            return "GUD";
+            return "UMTC";
         }
 
         @Override
         public String getSymbol() {
             return null;
+        }
+
+        @Override
+        public Coin getFeeCoin() {
+            return findCoin("UMTC");
+        }
+
+        @Override
+        public long getFee() {
+            return 1;
         }
     }
 

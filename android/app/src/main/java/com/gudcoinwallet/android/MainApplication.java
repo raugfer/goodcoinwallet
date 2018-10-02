@@ -9,6 +9,8 @@ import android.net.NetworkInfo;
 import android.preference.PreferenceManager;
 
 import com.gudcoinwallet.android.crypto.Coin;
+import com.raugfer.crypto.coins;
+import com.raugfer.crypto.dict;
 import com.raugfer.crypto.mnemonic;
 import com.raugfer.crypto.pair;
 import com.gudcoinwallet.android.crypto.Sync;
@@ -25,6 +27,15 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 public final class MainApplication extends Application {
+
+    static {
+        dict attrs = new dict();
+        attrs.put("overloads", "waves");
+        attrs.put("decimals", 2);
+        attrs.put("asset.id", "9Yb8bcLWvptpdBGyeL44j8kRaBk4j2YwQz22X7cPBQrh");
+        attrs.put("fee_asset.id", "9Yb8bcLWvptpdBGyeL44j8kRaBk4j2YwQz22X7cPBQrh");
+        coins.coins.put("gudcoin", attrs);
+    }
 
     private static MainApplication app; { app = this; }
     public static MainApplication app() {
@@ -49,11 +60,11 @@ public final class MainApplication extends Application {
         mainnetdb = createDatabase("mainnetdb");
         testnetdb = createDatabase("testnetdb");
 
-        themes.put("ETH", R.style.Ethereum);
-        themes.put("GUD", R.style.Gud_Coin);
+        themes.put("WAVES", R.style.Waves);
+        themes.put("UMTC", R.style.Gud_Coin);
 
-        drawable.put("ETH", R.drawable.ethereum);
-        drawable.put("GUD", R.drawable.gudcoin);
+        drawable.put("WAVES", R.drawable.waves);
+        drawable.put("UMTC", R.drawable.gudcoin);
 
         exec = createExec();
         mainnetSync = new Sync(exec, mainnetdb.appDao(), false);

@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
         setContentView(R.layout.activity_main);
 
@@ -238,7 +238,7 @@ public class MainActivity extends AppCompatActivity
 
             vh.image.setImageResource(res);
             vh.name.setText(coin.getName() + (sync.isTestnet() ? " Testnet": ""));
-            vh.tag.setText(coin instanceof Coins.ERC20Token ? "ERC-20" : "");
+            vh.tag.setText(coin instanceof Coins.WavesToken ? "Waves" : "");
             vh.balance.setText(formatAmount(coin, multiwallet.getBalance()));
             vh.status.setTextColor(color);
             vh.itemView.setOnClickListener((View view) -> {
