@@ -21,7 +21,7 @@
     <color name="waves_dark">#0044cd</color>
     <color name="waves_lite">#d6e0fc</color>
 
-    <color name="gudcoin">#ef7922</color>
-    <color name="gudcoin_dark">#c0611b</color>
-    <color name="gudcoin_lite">#17abaa</color>
+    <color name="criptohouse">#000000</color>
+    <color name="criptohouse_dark">#000000</color>
+    <color name="criptohouse_lite">#b0b0b0</color>
 </resources>

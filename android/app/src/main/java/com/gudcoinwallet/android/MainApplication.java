@@ -32,9 +32,8 @@ public final class MainApplication extends Application {
         dict attrs = new dict();
         attrs.put("overloads", "waves");
         attrs.put("decimals", 2);
-        attrs.put("asset.id", "9Yb8bcLWvptpdBGyeL44j8kRaBk4j2YwQz22X7cPBQrh");
-        attrs.put("fee_asset.id", "9Yb8bcLWvptpdBGyeL44j8kRaBk4j2YwQz22X7cPBQrh");
-        coins.coins.put("gudcoin", attrs);
+        attrs.put("asset.id", "7naCmy4BJEWDced9GiymCb9k8YusR7tERim6bPz68pgw");
+        coins.coins.put("criptohouse", attrs);
     }
 
     private static MainApplication app; { app = this; }
@@ -61,10 +60,10 @@ public final class MainApplication extends Application {
         testnetdb = createDatabase("testnetdb");
 
         themes.put("WAVES", R.style.Waves);
-        themes.put("UMTC", R.style.Gud_Coin);
+        themes.put("XRJ", R.style.Criptohouse);
 
         drawable.put("WAVES", R.drawable.waves);
-        drawable.put("UMTC", R.drawable.gudcoin);
+        drawable.put("XRJ", R.drawable.criptohouse);
 
         exec = createExec();
         mainnetSync = new Sync(exec, mainnetdb.appDao(), false);

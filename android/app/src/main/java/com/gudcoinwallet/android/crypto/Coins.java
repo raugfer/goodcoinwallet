@@ -9,13 +9,13 @@ import java.util.Map;
 public final class Coins {
 
     private static final Coin waves = new Waves();
-    private static final Coin gudcoin = new GudCoin();
+    private static final Coin criptohouse = new Criptohouse();
 
     private static final Map<String, Coin> registry = new HashMap<>();
 
     static {
         registry.put(waves.getCode(), waves);
-        registry.put(gudcoin.getCode(), gudcoin);
+        registry.put(criptohouse.getCode(), criptohouse);
     }
 
     public static Coin findCoin(String code) {
@@ -119,35 +119,25 @@ public final class Coins {
         }
     }
 
-    private static class GudCoin extends WavesToken {
+    private static class Criptohouse extends WavesToken {
         @Override
         public String getName() {
-            return "Gud Coin";
+            return "Criptohouse";
         }
 
         @Override
         public String getLabel() {
-            return "gudcoin";
+            return "criptohouse";
         }
 
         @Override
         public String getCode() {
-            return "UMTC";
+            return "XRJ";
         }
 
         @Override
         public String getSymbol() {
             return null;
-        }
-
-        @Override
-        public Coin getFeeCoin() {
-            return findCoin("UMTC");
-        }
-
-        @Override
-        public long getFee() {
-            return 1;
         }
     }
 
